@@ -76,7 +76,10 @@ p { margin: 10px 0; }
 
 /* ---- publications ---- */
 .pubgroup { font-weight: 700; color: var(--head); margin: 18px 0 4px; font-size: 16px; }
-.pub { margin: 11px 0; }
+.pub { display: flex; gap: 18px; align-items: flex-start; margin: 16px 0; }
+.pub .thumb { flex: 0 0 230px; }
+.pub .thumb img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); border-radius: 4px; }
+.pub .body { flex: 1 1 auto; min-width: 0; }
 .pub .ptitle { font-weight: 600; color: var(--head); }
 .pub .authors { color: var(--muted); font-size: 15px; }
 .pub .authors .me { color: var(--ink); font-weight: 700; }
@@ -106,4 +109,6 @@ footer.foot {
   .avatar { margin: 0 0 14px; }
   .social { text-align: left; }
   .entry .row { flex-direction: column; }
+  .pub { flex-direction: column; gap: 8px; }
+  .pub .thumb { flex-basis: auto; max-width: 340px; }
 }
