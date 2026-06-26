@@ -102,9 +102,8 @@ footer.foot {
 /* ---- responsive ---- */
 @media (max-width: 760px) {
   .page { flex-direction: column; gap: 22px; padding: 24px 18px 48px; }
-  .sidebar { position: static; flex-basis: auto; width: 100%; text-align: center; }
-  .avatar { margin: 0 auto 14px; }
-  .sidebar .tagline { justify-content: center; }
-  .social { display: inline-block; text-align: left; }
+  .sidebar { position: static; flex-basis: auto; width: 100%; }
+  .avatar { margin: 0 0 14px; }
+  .social { text-align: left; }
   .entry .row { flex-direction: column; }
 }
