@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wang Junjie (王俊杰)</title>
+  <meta name="description" content="Wang Junjie (王俊杰) — Ph.D. student at HITSZ. Multimodal understanding & generation, visual perception, efficient reasoning.">
+  <link rel="icon" href="image/avatar.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <button id="btn-zh" onclick="setLang('zh')">中文</button>
+    <button id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+
+  <!-- ===================== Header ===================== -->
+  <div class="header">
+    <div class="info">
+      <h1>王俊杰 <span class="sub">Wang Junjie</span></h1>
+      <p class="role">
+        <span class="zh">哈尔滨工业大学（深圳） 电子信息 博士研究生</span>
+        <span class="en">Ph.D. Student, Harbin Institute of Technology, Shenzhen</span>
+      </p>
+      <p class="links">
+        <a href="mailto:jjwanghz@stu.hit.edu.cn">Email</a> &nbsp;/&nbsp;
+        <a href="https://github.com/xiaomoguhz" target="_blank" rel="noopener">GitHub</a> &nbsp;/&nbsp;
+        <a href="#" target="_blank" rel="noopener">Google Scholar</a>
+      </p>
+    </div>
+    <img class="avatar" src="image/avatar.svg" alt="avatar">
+  </div>
+
+  <!-- ===================== Biography ===================== -->
+  <h2><span class="zh">个人简介</span><span class="en">Biography</span></h2>
+  <p class="zh">
+    我是王俊杰，哈尔滨工业大学（深圳）电子信息博士研究生（2023 年至今），研究方向为多模态理解与生成、多模态视觉感知、以及大模型高效推理。
+    我曾在字节跳动 TikTok 与快手 Kling 团队担任大模型研究实习生，研究内容覆盖图像/视频生成 Agent、多模态大模型蒸馏与视觉编码器后训练。
+  </p>
+  <p class="en">
+    I am Wang Junjie, a Ph.D. student in Electronic Information at Harbin Institute of Technology, Shenzhen (since 2023).
+    My research focuses on multimodal understanding &amp; generation, multimodal visual perception, and efficient reasoning for large models.
+    I have interned as a research intern at ByteDance (TikTok) and the Kling Team at Kuaishou, working on image/video generation agents,
+    multimodal LLM distillation, and vision-encoder post-training.
+  </p>
+
+  <!-- ===================== Publications ===================== -->
+  <h2><span class="zh">发表论文</span><span class="en">Publications</span></h2>
+
+  <div class="pubgroup"><span class="zh">多模态理解与生成</span><span class="en">Multimodal Understanding &amp; Generation</span></div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/r3bench.svg" alt="R3-Bench"></div>
+    <div class="body">
+      <div class="title">Benchmarking and Evolving Reason-Reflect-Rectify for Reflective Visual Generation</div>
+      <div class="authors"><span class="me">Wang J</span>, Lou X, Tian Z, et al.</div>
+      <div class="meta">
+        <span class="tag"><b>ICML 2026</b></span> /
+        <span class="tag"><a href="https://github.com/xiaomoguhz/R3-Bench" target="_blank" rel="noopener">Code</a></span>
+      </div>
+      <div class="tldr zh">将复杂场景下的 T2I 生成形式化为 Reason-Reflect-Rectify 闭环，提出面向图像生成 Agent 与理解生成一体化模型的 R³-Bench 评估基准，并提出 R³-Refiner 强化学习方法，训练 MLLM 输出错误识别、反思与可执行修正，可插拔接入 Banana、GPT-Image 等生成模型提升质量。</div>
+      <div class="tldr en">We formalize T2I generation as a Reason-Reflect-Rectify loop, propose R³-Bench for image-generation agents and unified understanding-generation models, and introduce R³-Refiner, an RL method that trains an MLLM to detect, reflect on, and rectify errors — pluggable into Banana, GPT-Image, etc.</div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/mrig.svg" alt="Multi-Reference Generation"></div>
+    <div class="body">
+      <div class="title">Scaling Multi-Reference Image Generation with Dynamic Reward Optimization</div>
+      <div class="authors">Huang W*, <span class="me">Wang J*</span>, Tian Z, et al.
+        <span class="zh">（共同一作）</span><span class="en">(Equal Contribution)</span></div>
+      <div class="meta">
+        <span class="tag"><b><span class="zh">投稿 ECCV 2026</span><span class="en">Submitted to ECCV 2026</span></b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pubgroup"><span class="zh">多模态视觉感知</span><span class="en">Multimodal Visual Perception</span></div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/declip.svg" alt="DeCLIP"></div>
+    <div class="body">
+      <div class="title">DeCLIP: Decoupled Learning for Open-Vocabulary Dense Perception</div>
+      <div class="authors"><span class="me">Wang J</span>, Chen B, Tian Z, et al.</div>
+      <div class="meta">
+        <span class="tag"><b>CVPR 2025</b></span> /
+        <span class="tag"><span class="star">★ 160+</span></span> /
+        <span class="tag"><a href="https://github.com/xiaomoguhz/DeCLIP" target="_blank" rel="noopener">Code</a></span>
+      </div>
+      <div class="tldr zh">面向 CLIP 难以直接支撑检测、分割等精细视觉任务的问题，提出 DeCLIP 表征学习方法，增强模型对局部细节、空间结构与语言语义的联合表征能力，可作为通用视觉 backbone 提升下游视觉感知能力。</div>
+      <div class="tldr en">Targeting CLIP's weakness on dense tasks like detection and segmentation, DeCLIP decouples representation learning to jointly strengthen local detail, spatial structure, and language semantics — usable as a general vision backbone.</div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/ovdquo.svg" alt="OV-DQUO"></div>
+    <div class="body">
+      <div class="title">OV-DQUO: Open-Vocabulary DETR with Denoising Text Query Training and Open-World Unknown Objects Supervision</div>
+      <div class="authors"><span class="me">Wang J</span>, Chen B, Kang B, et al.</div>
+      <div class="meta">
+        <span class="tag"><b>AAAI 2025</b></span> /
+        <span class="tag"><a href="https://github.com/xiaomoguhz/OV-DQUO" target="_blank" rel="noopener">Code</a></span>
+      </div>
+      <div class="tldr zh">面向开放词汇检测中未见类别目标易被检测器忽略或误判为背景的问题，提出 OV-DQUO，引入未知目标监督增强模型对新类别前景的发现与识别能力，在开放词汇检测任务取得新的 SOTA 结果。</div>
+      <div class="tldr en">Addressing missed/false-background novel objects in open-vocabulary detection, OV-DQUO adds open-world unknown-object supervision and denoising text-query training, achieving new SOTA on open-vocabulary detection.</div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/gdl.svg" alt="Generalized DeCLIP"></div>
+    <div class="body">
+      <div class="title">Generalized Decoupled Learning for Enhancing Open-Vocabulary Dense Perception</div>
+      <div class="authors"><span class="me">Wang J</span>, Chen B, Tian Z, et al.</div>
+      <div class="meta">
+        <span class="tag"><b>TPAMI</b></span>
+        <span class="tag"><span class="zh">（Major Revision）</span><span class="en">(Major Revision)</span></span>
+      </div>
+      <div class="tldr zh">提出广义解耦表征学习框架，将解耦的结构先验引入多模态感知表征学习，可作为通用视觉 backbone，提升二维、三维、视频和位姿估计等任务上的多模态感知能力。</div>
+      <div class="tldr en">A generalized decoupled representation-learning framework that injects structural priors into multimodal perception, serving as a general backbone across 2D, 3D, video, and pose-estimation tasks.</div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/calibclip.svg" alt="CalibCLIP"></div>
+    <div class="body">
+      <div class="title">CalibCLIP: Contextual Calibration of Dominant Semantics for Text-Driven Image Retrieval</div>
+      <div class="authors">Kang B, Chen B, <span class="me">Wang J</span>, Tian Z, et al.</div>
+      <div class="meta">
+        <span class="tag"><b>ACM MM 2025</b></span>
+        <span class="tag"><span class="zh">（Oral）</span><span class="en">(Oral)</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pubgroup"><span class="zh">大模型高效推理</span><span class="en">Efficient Reasoning &amp; Inference</span></div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/dytok.svg" alt="DyToK"></div>
+    <div class="body">
+      <div class="title">Less Is More, but Where? Dynamic Token Compression via LLM-Guided Keyframe Prior</div>
+      <div class="authors">Li Y, <span class="me">Wang J</span>, Tian Z, et al.</div>
+      <div class="meta">
+        <span class="tag"><b>NeurIPS 2025</b></span> /
+        <span class="tag"><a href="https://github.com/xiaomoguhz/DyToK" target="_blank" rel="noopener">Code</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="thumb"><img src="image/papers/ebt.svg" alt="Balanced Thinking"></div>
+    <div class="body">
+      <div class="title">Efficient Reasoning with Balanced Thinking</div>
+      <div class="authors">Li Y, <span class="me">Wang J</span>, Tian Z, et al.</div>
+      <div class="meta">
+        <span class="tag"><b>ICLR 2026</b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== Experience ===================== -->
+  <h2><span class="zh">实习经历</span><span class="en">Experience</span></h2>
+
+  <div class="entry">
+    <div class="row">
+      <span class="org">字节跳动 TikTok</span>
+      <span class="date">2025.09 – 2026.04</span>
+    </div>
+    <div class="role"><span class="zh">大模型研究实习生</span><span class="en">Research Intern, Large Model</span></div>
+    <ul>
+      <li class="zh"><b>图像生成 Agent 研究：</b>将 T2I 生成任务形式化为 Reason-Reflect-Rectify 闭环，提出 R³-Bench 评估基准与 R³-Refiner 强化学习方法，相关工作已被 ICML 2026 接收。</li>
+      <li class="en"><b>Image-Generation Agent:</b> formalized T2I generation as a Reason-Reflect-Rectify loop; built the R³-Bench benchmark and R³-Refiner RL method (accepted to ICML 2026).</li>
+      <li class="zh"><b>TinyMLLM 模型蒸馏：</b>以 Qwen3-VL / Qwen3.5 为基础模型，搭建两阶段蒸馏 pipeline，负责蒸馏方案设计、高质量监督数据构建、teacher 训练与 2B 小模型蒸馏，已落地游戏直播业务替换 Gemini 商业模型并降低成本。</li>
+      <li class="en"><b>TinyMLLM Distillation:</b> built a two-stage distillation pipeline on Qwen3-VL / Qwen3.5; led recipe design, supervision-data construction, teacher training, and 2B-model distillation — deployed in live-streaming business, replacing Gemini and cutting cost.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="org"><span class="zh">快手 Kling 团队</span><span class="en">Kuaishou, Kling Team</span></span>
+      <span class="date">2026.04 – <span class="zh">至今</span><span class="en">Present</span></span>
+    </div>
+    <div class="role"><span class="zh">大模型研究实习生</span><span class="en">Research Intern, Large Model</span></div>
+    <ul>
+      <li class="zh"><b>MLLM 视觉编码器后训练：</b>基于 MS-Swift 搭建视觉编码器后训练三阶段管线，设计多教师蒸馏方案，探索优于 Qwen3.5 ViT 的视觉编码器，提升 MLLM 对空间结构与视频时序动态的感知能力。</li>
+      <li class="en"><b>MLLM Vision-Encoder Post-training:</b> built a three-stage post-training pipeline on MS-Swift with a multi-teacher distillation scheme, aiming at a vision encoder beyond Qwen3.5 ViT with stronger spatial and temporal perception.</li>
+      <li class="zh"><b>视频生成 Agent 研究：</b>以 Qwen3.5 为基座，后训练可调用视频生成模型的 MLLM Agent，在生成过程中引入任务规划、内容理解与反思、反馈修正，构建面向视频生成 Agent 的评估基准与对应强化学习训练方法。</li>
+      <li class="en"><b>Video-Generation Agent:</b> post-trained a Qwen3.5-based MLLM agent that calls video-generation models with planning, reflection, and feedback rectification; designed the corresponding benchmark and RL training method.</li>
+    </ul>
+  </div>
+
+  <!-- ===================== Projects ===================== -->
+  <h2><span class="zh">项目经历</span><span class="en">Projects</span></h2>
+
+  <div class="entry">
+    <div class="row">
+      <span class="org"><span class="zh">华为云计算技术有限公司</span><span class="en">Huawei Cloud</span></span>
+      <span class="date">2023.09 – 2024.09</span>
+    </div>
+    <div class="role"><span class="zh">融合机理与迁移的边云协同未知任务处理</span><span class="en">Edge-Cloud Collaborative Unknown-Task Handling</span></div>
+    <ul>
+      <li class="zh">开发可插拔未知任务处理算法，整合到华为云 Sedna 边云协同终身学习框架，并产出专利：一种任务处理方法及相关系统（CN118917432A）。</li>
+      <li class="en">Built a pluggable unknown-task handling algorithm, integrated into Huawei Cloud's Sedna edge-cloud lifelong-learning framework; resulted in patent CN118917432A.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="org"><span class="zh">中国电子云有限公司</span><span class="en">China Electronics Cloud</span></span>
+      <span class="date">2023.12 – 2024.12</span>
+    </div>
+    <div class="role"><span class="zh">基于视觉语言模型的视频语义及向量化算法应用研究</span><span class="en">VLM-based Video Semantics &amp; Vectorization</span></div>
+    <ul>
+      <li class="zh">基于视觉语言模型编码器实现千万级图像语义向量化与快速检索，支持以文搜图与以图搜图，已通过验收并应用于武汉公安安防、机场试点等场景。</li>
+      <li class="en">Built a VLM-encoder system for ten-million-scale image semantic vectorization and fast retrieval (text-to-image and image-to-image), deployed in public-security and airport pilot scenarios.</li>
+    </ul>
+  </div>
+
+  <!-- ===================== Honors ===================== -->
+  <h2><span class="zh">获得荣誉</span><span class="en">Honors</span></h2>
+  <ul>
+    <li class="zh">研究生国家奖学金</li>
+    <li class="en">National Scholarship for Graduate Students</li>
+    <li class="zh">省优秀硕士学位论文</li>
+    <li class="en">Provincial Outstanding Master's Thesis</li>
+    <li class="zh">优秀毕业生</li>
+    <li class="en">Outstanding Graduate</li>
+  </ul>
+
+  <!-- ===================== Education ===================== -->
+  <h2><span class="zh">教育背景</span><span class="en">Education</span></h2>
+
+  <div class="entry">
+    <div class="row">
+      <span class="org"><span class="zh">哈尔滨工业大学（深圳）</span><span class="en">Harbin Institute of Technology, Shenzhen</span></span>
+      <span class="date">2023.03 – <span class="zh">至今</span><span class="en">Present</span></span>
+    </div>
+    <div class="role"><span class="zh">电子信息 · 博士研究生</span><span class="en">Ph.D. in Electronic Information</span></div>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="org"><span class="zh">新疆大学</span><span class="en">Xinjiang University</span></span>
+      <span class="date">2019.09 – 2022.06</span>
+    </div>
+    <div class="role"><span class="zh">软件工程 · 硕士研究生</span><span class="en">M.Eng. in Software Engineering</span></div>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <span class="org"><span class="zh">成都大学</span><span class="en">Chengdu University</span></span>
+      <span class="date">2015.09 – 2019.06</span>
+    </div>
+    <div class="role"><span class="zh">计算机科学与技术 · 本科</span><span class="en">B.Eng. in Computer Science and Technology</span></div>
+  </div>
+
+  <footer>
+    © 2026 Wang Junjie ·
+    <span class="zh">基于 GitHub Pages 构建</span><span class="en">Built with GitHub Pages</span>
+  </footer>
+
+</div>
+
+<script>
+  function setLang(l) {
+    document.documentElement.setAttribute('data-lang', l);
+    document.documentElement.setAttribute('lang', l === 'zh' ? 'zh' : 'en');
+    document.getElementById('btn-zh').classList.toggle('active', l === 'zh');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  setLang(localStorage.getItem('lang') || 'zh');
+</script>
+</body>
+</html>
