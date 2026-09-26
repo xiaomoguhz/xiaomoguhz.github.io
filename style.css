@@ -1,14 +1,13 @@
-/* Personal homepage — Size Wu / AcademicPages (Minimal Mistakes) style.
-   Two-column: sticky author sidebar + main content. English only. */
+/* Personal academic homepage: a sticky profile and a readable main column. */
 
 :root {
-  --link: #2a7ae2;
-  --link-hover: #1a5fb4;
-  --ink: #3b3f44;
-  --head: #1a1a1a;
-  --muted: #6f777d;
-  --rule: #e8eaed;
-  --accent: #d64541;
+  --link: #416b91;
+  --link-hover: #294c70;
+  --ink: #374151;
+  --head: #202b38;
+  --muted: #717b88;
+  --rule: #e5e9ee;
+  --accent: #416b91;
 }
 
 * { box-sizing: border-box; }
@@ -16,8 +15,8 @@
 body {
   margin: 0;
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-               "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   background: #fff;
@@ -28,87 +27,113 @@ a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-hover); text-decoration: underline; }
 
 .page {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 34px 24px 64px;
+  padding: 48px 32px 80px;
   display: flex;
-  gap: 44px;
+  gap: 56px;
   align-items: flex-start;
 }
 
-/* ---- sidebar ---- */
-.sidebar { flex: 0 0 236px; position: sticky; top: 34px; }
+/* Profile */
+.sidebar { flex: 0 0 240px; position: sticky; top: 40px; }
 .avatar {
-  width: 200px; height: 200px;
+  width: 220px; height: 220px;
   border-radius: 50%; object-fit: cover;
   border: 1px solid var(--rule);
-  display: block; margin-bottom: 14px;
+  display: block; margin-bottom: 22px;
 }
-.sidebar .name { font-size: 22px; font-weight: 700; color: var(--head); margin: 0; line-height: 1.3; }
-.sidebar .name .cn { font-weight: 400; font-size: 17px; color: #555; }
-.sidebar .tagline { color: var(--muted); font-size: 14.5px; margin: 5px 0 12px; display: flex; align-items: center; }
-.sidebar .hitlogo { height: 28px; margin-right: 12px; }
-.social { list-style: none; padding: 0; margin: 12px 0 0; font-size: 15px; }
-.social li { margin: 7px 0; color: var(--muted); }
-.social li i { width: 20px; text-align: center; color: var(--muted); margin-right: 7px; }
+.sidebar .name { font-size: 28px; font-weight: 700; color: var(--head); margin: 0; line-height: 1.3; letter-spacing: -.6px; }
+.sidebar .name .cn { display: block; margin-top: 5px; font-weight: 400; font-size: 18px; color: var(--muted); letter-spacing: 0; }
+.sidebar .tagline { color: var(--muted); font-size: 13.5px; margin: 16px 0; display: flex; align-items: center; }
+.sidebar .hitlogo { height: 26px; margin-right: 10px; }
+.social { list-style: none; padding: 0; margin: 20px 0 0; font-size: 14px; }
+.social li { margin: 10px 0; color: var(--muted); }
+.social li i { width: 20px; text-align: center; color: var(--muted); margin-right: 8px; }
 .social a { color: var(--ink); }
 .social a:hover { color: var(--link); text-decoration: none; }
 
-/* ---- main content ---- */
+/* Main content */
 .content { flex: 1 1 auto; min-width: 0; }
 h2 {
-  font-size: 21px; color: var(--head); font-weight: 700;
-  border-bottom: 1px solid var(--rule); padding-bottom: 5px; margin: 30px 0 12px;
+  font-size: 22px; color: var(--head); font-weight: 600; letter-spacing: -.4px;
+  border-bottom: 1px solid var(--rule); padding-bottom: 9px; margin: 36px 0 16px;
 }
 h2:first-of-type { margin-top: 0; }
-p { margin: 10px 0; }
+p { margin: 12px 0; }
 
-/* ---- hiring callout ---- */
 .hiring {
-  background: #f4f8ff; border-left: 3px solid var(--link);
-  padding: 9px 14px; border-radius: 4px; margin: 12px 0; font-size: 15px;
+  background: #f5f8fc; border-left: 3px solid #9eb6ce;
+  padding: 12px 16px; border-radius: 4px; margin: 18px 0; font-size: 14.5px;
 }
 
-/* ---- news ---- */
-.news p { margin: 8px 0; }
-.news .date { color: var(--muted); font-size: 14px; }
+/* News */
+.news { font-size: 14.5px; }
+.news p { margin: 10px 0; }
+.news .date { color: var(--muted); font-size: 13px; white-space: nowrap; }
 .news .fire { color: var(--accent); }
+.older-news { margin-top: 12px; }
+.older-news summary { color: var(--link); font-size: 13.5px; font-weight: 500; cursor: pointer; width: fit-content; }
+.older-news summary:hover { color: var(--link-hover); }
 
-/* ---- publications ---- */
-.pubgroup { font-weight: 700; color: var(--head); margin: 18px 0 4px; font-size: 16px; }
-.pub { display: flex; gap: 18px; align-items: flex-start; margin: 16px 0; }
-.pub .thumb { flex: 0 0 230px; }
-.pub .thumb img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); border-radius: 4px; }
+/* Experience */
+.entry { margin: 18px 0 26px; }
+.entry .row { display: flex; justify-content: space-between; align-items: center; gap: 8px 16px; flex-wrap: wrap; }
+.entry .org { font-size: 16px; font-weight: 600; color: var(--head); display: inline-flex; align-items: center; }
+.entry .org .orglogo { height: 24px; margin-right: 10px; }
+.entry .date { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.entry .role { color: var(--ink); font-size: 14px; margin-top: 5px; }
+.supervision { color: var(--muted); font-size: 13.5px; margin: 2px 0 9px; }
+ul.bul { margin: 8px 0; padding-left: 20px; }
+ul.bul li { margin: 7px 0; }
+.entry .bul { font-size: 15px; }
+.entry .bul b { font-weight: 600; }
+
+/* Publications */
+.pubgroup { font-weight: 600; color: var(--muted); margin: 24px 0 12px; font-size: 14px; }
+.pub { display: flex; gap: 24px; align-items: flex-start; margin: 22px 0 28px; }
+.pub .thumb {
+  flex: 0 0 240px; width: 240px; height: 120px;
+  padding: 4px; border: 1px solid var(--rule); border-radius: 6px;
+  background: #fff; overflow: hidden;
+}
+.pub .thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .pub .body { flex: 1 1 auto; min-width: 0; }
-.pub .ptitle { font-weight: 600; color: var(--head); }
-.pub .authors { color: var(--muted); font-size: 15px; }
-.pub .authors .me { color: var(--ink); font-weight: 700; }
+.pub .ptitle { font-size: 17px; line-height: 1.5; font-weight: 600; color: var(--head); letter-spacing: -.15px; }
+.pub .authors { color: var(--muted); font-size: 14px; margin-top: 6px; }
+.pub .authors .me { color: var(--ink); font-weight: 600; }
+.pub .links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 10px; font-size: 13px; }
 .pub .venue { color: var(--link); font-weight: 600; }
 .pub .links a { font-size: 14px; }
-.star { color: var(--accent); font-weight: 700; }
-
-/* ---- entries (experience) ---- */
-.entry { margin: 13px 0; }
-.entry .row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.entry .org { font-weight: 700; color: var(--head); display: inline-flex; align-items: center; }
-.entry .org .orglogo { height: 26px; margin-right: 12px; }
-.entry .date { color: var(--muted); white-space: nowrap; }
-.entry .role { color: #555; }
-ul.bul { margin: 6px 0; padding-left: 20px; }
-ul.bul li { margin: 5px 0; }
+.stars-link { display: inline-flex; align-items: center; }
+.stars-link img { height: 20px; display: block; }
 
 footer.foot {
-  margin-top: 44px; color: var(--muted); font-size: 13px;
-  border-top: 1px solid var(--rule); padding-top: 14px;
+  margin-top: 48px; color: var(--muted); font-size: 12px;
+  border-top: 1px solid var(--rule); padding-top: 18px;
 }
 
-/* ---- responsive ---- */
+/* Responsive layout */
+@media (max-width: 1000px) and (min-width: 761px) {
+  .page { gap: 32px; padding-right: 24px; padding-left: 24px; }
+  .sidebar { flex-basis: 220px; }
+  .pub { flex-direction: column; gap: 14px; }
+  .pub .thumb { flex-basis: auto; }
+}
+
 @media (max-width: 760px) {
-  .page { flex-direction: column; gap: 22px; padding: 24px 18px 48px; }
+  .page { flex-direction: column; gap: 30px; padding: 28px 22px 48px; }
   .sidebar { position: static; flex-basis: auto; width: 100%; }
-  .avatar { margin: 0 0 14px; }
-  .social { text-align: left; }
-  .entry .row { flex-direction: column; }
-  .pub { flex-direction: column; gap: 8px; }
-  .pub .thumb { flex-basis: auto; max-width: 340px; }
+  .avatar { width: 160px; height: 160px; margin-bottom: 16px; }
+  .sidebar .name { font-size: 26px; }
+  .sidebar .name .cn { display: inline; margin-left: 5px; font-size: 17px; }
+  .sidebar .tagline { margin: 10px 0; }
+  .social { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px; font-size: 13px; }
+  .social li { margin: 0; }
+  .social li i { width: 15px; margin-right: 5px; }
+  .content { width: 100%; }
+  h2 { margin-top: 30px; }
+  .entry .row { align-items: flex-start; flex-direction: column; gap: 2px; }
+  .pub { flex-direction: column; gap: 14px; margin: 22px 0 30px; }
+  .pub .thumb { flex-basis: auto; width: min(100%, 320px); height: auto; aspect-ratio: 2 / 1; }
 }

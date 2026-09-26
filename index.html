@@ -6,6 +6,9 @@
   <title>Junjie Wang (王俊杰)</title>
   <meta name="description" content="Junjie Wang (王俊杰) — Ph.D. student at HITSZ. Multimodal understanding & generation, visual perception, efficient reasoning.">
   <link rel="icon" href="image/avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,7 +39,7 @@
       I am co-advised by <a href="https://zhuotaotian.github.io/" target="_blank" rel="noopener">Prof. Zhuotao Tian</a>
       and <a href="https://homepage.hit.edu.cn/chenbin2020" target="_blank" rel="noopener">Prof. Bin Chen</a>.
       My research focuses on multimodal understanding and generation, multimodal visual perception, and efficient reasoning for large models.
-      I have worked as a research intern at ByteDance (TikTok) and the Kling Team at Kuaishou, where I studied image and video generation agents,
+      I have worked as a research intern at ByteDance (TikTok) and Kling AI at Kuaishou, where I studied image and video generation agents,
       multimodal LLM distillation, and vision-encoder post-training.
     </p>
     <p class="hiring">
@@ -49,23 +52,27 @@
     <div class="news">
       <p><span class="fire">🔥</span> Our paper <strong>DyRef</strong> (Scaling Multi-Reference Image Generation) is accepted by ECCV 2026. <span class="date">(Jun 2026)</span></p>
       <p><span class="fire">🔥</span> Our paper <strong>R³-Bench / R³-Refiner</strong> is accepted by ICML 2026. <span class="date">(May 2026)</span></p>
-      <p>Joined the Kling Team at Kuaishou as a research intern. <span class="date">(Apr 2026)</span></p>
+      <p>Joined Kling AI at Kuaishou as a research intern. <span class="date">(Apr 2026)</span></p>
       <p>Our paper <strong>Efficient Reasoning with Balanced Thinking</strong> is accepted by ICLR 2026. <span class="date">(Jan 2026)</span></p>
-      <p>Our paper <strong>DyToK</strong> is accepted by NeurIPS 2025. <span class="date">(Sep 2025)</span></p>
-      <p>Joined ByteDance (TikTok) as a research intern. <span class="date">(Sep 2025)</span></p>
-      <p>Our paper <strong>CalibCLIP</strong> is accepted by ACM MM 2025 (Oral). <span class="date">(Jul 2025)</span></p>
-      <p>Our paper <strong>DeCLIP</strong> is accepted by CVPR 2025. <span class="date">(Feb 2025)</span></p>
-      <p>Our paper <strong>OV-DQUO</strong> is accepted by AAAI 2025. <span class="date">(Dec 2024)</span></p>
+      <details class="older-news">
+        <summary>Earlier news</summary>
+        <p>Our paper <strong>DyToK</strong> is accepted by NeurIPS 2025. <span class="date">(Sep 2025)</span></p>
+        <p>Joined ByteDance (TikTok) as a research intern. <span class="date">(Sep 2025)</span></p>
+        <p>Our paper <strong>CalibCLIP</strong> is accepted by ACM MM 2025 (Oral). <span class="date">(Jul 2025)</span></p>
+        <p>Our paper <strong>DeCLIP</strong> is accepted by CVPR 2025. <span class="date">(Feb 2025)</span></p>
+        <p>Our paper <strong>OV-DQUO</strong> is accepted by AAAI 2025. <span class="date">(Dec 2024)</span></p>
+      </details>
     </div>
 
     <!-- Experience -->
     <h2>Experience</h2>
     <div class="entry">
       <div class="row">
-        <span class="org"><img class="orglogo" src="image/logos/kuaishou.svg" alt="Kuaishou" height="26">Kuaishou, Kling Team</span>
+        <span class="org"><img class="orglogo" src="image/logos/kuaishou.svg" alt="Kuaishou" height="26">Kuaishou, Kling AI</span>
         <span class="date">2026.04 – Present</span>
       </div>
       <div class="role">Research Intern</div>
+      <div class="supervision">Supervised by Yuanzheng Ci and <a href="https://www.xtao.website/" target="_blank" rel="noopener">Xin Tao</a>.</div>
       <ul class="bul">
         <li><b>MLLM Vision-Encoder Post-training:</b> built a three-stage post-training pipeline on MS-Swift with a multi-teacher distillation scheme, aiming to obtain a vision encoder that surpasses the Qwen3.5 ViT in both spatial structure and temporal dynamics.</li>
         <li><b>Video-Generation Agent:</b> post-trained a Qwen3.5-based MLLM agent that drives video-generation models through planning, reflection, and feedback rectification, and designed the corresponding benchmark and reinforcement learning training method.</li>
@@ -77,6 +84,7 @@
         <span class="date">2025.09 – 2026.04</span>
       </div>
       <div class="role">Research Intern</div>
+      <div class="supervision">Supervised by <a href="https://lxtgh.github.io/" target="_blank" rel="noopener">Xiangtai Li</a> and <a href="https://guangcan.tech/" target="_blank" rel="noopener">Guangcan Mai</a>.</div>
       <ul class="bul">
         <li><b>Image-Generation Agent:</b> formalized T2I generation as a Reason-Reflect-Rectify loop and built the R³-Bench benchmark together with the R³-Refiner reinforcement learning method, which has been accepted to ICML 2026.</li>
         <li><b>TinyMLLM Distillation:</b> built a two-stage distillation pipeline on Qwen3-VL and Qwen3.5, covering recipe design, supervision-data construction, teacher training, and 2B-model distillation. The resulting model has been deployed in live-streaming services to replace Gemini and reduce cost.</li>
@@ -92,7 +100,10 @@
       <div class="body">
         <div class="ptitle">Benchmarking and Evolving Reason-Reflect-Rectify for Reflective Visual Generation</div>
         <div class="authors"><span class="me">Wang J*</span>, Lou X*, Tian Z, et al.</div>
-        <div class="links"><span class="venue">ICML 2026</span> &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2605.19639" target="_blank" rel="noopener">Paper</a> &nbsp;|&nbsp; <a href="https://github.com/xiaomoguhz/R3-Bench" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><span class="venue">ICML 2026</span>
+          <a href="https://arxiv.org/abs/2605.19639" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/xiaomoguhz/R3-Bench" target="_blank" rel="noopener">Code</a>
+          <a class="stars-link" href="https://github.com/xiaomoguhz/R3-Bench" target="_blank" rel="noopener" aria-label="R3-Bench stars on GitHub"><img src="https://img.shields.io/github/stars/xiaomoguhz/R3-Bench?style=social" alt="GitHub stars" height="20"></a></div>
       </div>
     </div>
     <div class="pub">
@@ -100,7 +111,10 @@
       <div class="body">
         <div class="ptitle">Scaling Multi-Reference Image Generation with Dynamic Reward Optimization</div>
         <div class="authors">Huang W, <span class="me">Wang J</span>, Tian Z, et al.</div>
-        <div class="links"><span class="venue">ECCV 2026</span> &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2606.26947" target="_blank" rel="noopener">Paper</a> &nbsp;|&nbsp; <a href="https://github.com/Weistrass/DyRef" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><span class="venue">ECCV 2026</span>
+          <a href="https://arxiv.org/abs/2606.26947" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/Weistrass/DyRef" target="_blank" rel="noopener">Code</a>
+          <a class="stars-link" href="https://github.com/Weistrass/DyRef" target="_blank" rel="noopener" aria-label="DyRef stars on GitHub"><img src="https://img.shields.io/github/stars/Weistrass/DyRef?style=social" alt="GitHub stars" height="20"></a></div>
       </div>
     </div>
 
@@ -110,7 +124,10 @@
       <div class="body">
         <div class="ptitle">DeCLIP: Decoupled Learning for Open-Vocabulary Dense Perception</div>
         <div class="authors"><span class="me">Wang J</span>, Chen B, Tian Z, et al.</div>
-        <div class="links"><span class="venue">CVPR 2025</span> &nbsp;|&nbsp; <span class="star">★ 160+</span> &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2505.04410" target="_blank" rel="noopener">Paper</a> &nbsp;|&nbsp; <a href="https://github.com/xiaomoguhz/DeCLIP" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><span class="venue">CVPR 2025</span>
+          <a href="https://arxiv.org/abs/2505.04410" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/xiaomoguhz/DeCLIP" target="_blank" rel="noopener">Code</a>
+          <a class="stars-link" href="https://github.com/xiaomoguhz/DeCLIP" target="_blank" rel="noopener" aria-label="DeCLIP stars on GitHub"><img src="https://img.shields.io/github/stars/xiaomoguhz/DeCLIP?style=social" alt="GitHub stars" height="20"></a></div>
       </div>
     </div>
     <div class="pub">
@@ -118,7 +135,10 @@
       <div class="body">
         <div class="ptitle">OV-DQUO: Open-Vocabulary DETR with Denoising Text Query Training and Open-World Unknown Objects Supervision</div>
         <div class="authors"><span class="me">Wang J</span>, Chen B, Kang B, et al.</div>
-        <div class="links"><span class="venue">AAAI 2025</span> &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2405.17913" target="_blank" rel="noopener">Paper</a> &nbsp;|&nbsp; <a href="https://github.com/xiaomoguhz/OV-DQUO" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><span class="venue">AAAI 2025</span>
+          <a href="https://arxiv.org/abs/2405.17913" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/xiaomoguhz/OV-DQUO" target="_blank" rel="noopener">Code</a>
+          <a class="stars-link" href="https://github.com/xiaomoguhz/OV-DQUO" target="_blank" rel="noopener" aria-label="OV-DQUO stars on GitHub"><img src="https://img.shields.io/github/stars/xiaomoguhz/OV-DQUO?style=social" alt="GitHub stars" height="20"></a></div>
       </div>
     </div>
     <div class="pub">
@@ -126,7 +146,10 @@
       <div class="body">
         <div class="ptitle">Generalized Decoupled Learning for Enhancing Open-Vocabulary Dense Perception</div>
         <div class="authors"><span class="me">Wang J</span>, Chen B, Tian Z, et al.</div>
-        <div class="links"><span class="venue">arXiv</span> &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2508.11256" target="_blank" rel="noopener">Paper</a> &nbsp;|&nbsp; <a href="https://github.com/xiaomoguhz/DeCLIP" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><span class="venue">arXiv</span>
+          <a href="https://arxiv.org/abs/2508.11256" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/xiaomoguhz/DeCLIP" target="_blank" rel="noopener">Code</a>
+          <a class="stars-link" href="https://github.com/xiaomoguhz/DeCLIP" target="_blank" rel="noopener" aria-label="DeCLIP stars on GitHub"><img src="https://img.shields.io/github/stars/xiaomoguhz/DeCLIP?style=social" alt="GitHub stars" height="20"></a></div>
       </div>
     </div>
     <div class="pub">
@@ -134,7 +157,8 @@
       <div class="body">
         <div class="ptitle">CalibCLIP: Contextual Calibration of Dominant Semantics for Text-Driven Image Retrieval</div>
         <div class="authors">Kang B, Chen B, <span class="me">Wang J</span>, Tian Z, et al.</div>
-        <div class="links"><span class="venue">ACM MM 2025</span> (Oral) &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2510.05586" target="_blank" rel="noopener">Paper</a></div>
+        <div class="links"><span class="venue">ACM MM 2025</span> (Oral)
+          <a href="https://arxiv.org/abs/2510.05586" target="_blank" rel="noopener">Paper</a></div>
       </div>
     </div>
 
@@ -144,7 +168,10 @@
       <div class="body">
         <div class="ptitle">Less Is More, but Where? Dynamic Token Compression via LLM-Guided Keyframe Prior</div>
         <div class="authors">Li Y, <span class="me">Wang J</span>, Tian Z, et al.</div>
-        <div class="links"><span class="venue">NeurIPS 2025</span> &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2512.06866" target="_blank" rel="noopener">Paper</a> &nbsp;|&nbsp; <a href="https://github.com/xiaomoguhz/DyToK" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><span class="venue">NeurIPS 2025</span>
+          <a href="https://arxiv.org/abs/2512.06866" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/xiaomoguhz/DyToK" target="_blank" rel="noopener">Code</a>
+          <a class="stars-link" href="https://github.com/xiaomoguhz/DyToK" target="_blank" rel="noopener" aria-label="DyToK stars on GitHub"><img src="https://img.shields.io/github/stars/xiaomoguhz/DyToK?style=social" alt="GitHub stars" height="20"></a></div>
       </div>
     </div>
     <div class="pub">
@@ -152,7 +179,10 @@
       <div class="body">
         <div class="ptitle">Efficient Reasoning with Balanced Thinking</div>
         <div class="authors">Li Y, <span class="me">Wang J</span>, Tian Z, et al.</div>
-        <div class="links"><span class="venue">ICLR 2026</span> &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2603.12372" target="_blank" rel="noopener">Paper</a> &nbsp;|&nbsp; <a href="https://github.com/yu-lin-li/ReBalance" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><span class="venue">ICLR 2026</span>
+          <a href="https://arxiv.org/abs/2603.12372" target="_blank" rel="noopener">Paper</a>
+          <a href="https://github.com/yu-lin-li/ReBalance" target="_blank" rel="noopener">Code</a>
+          <a class="stars-link" href="https://github.com/yu-lin-li/ReBalance" target="_blank" rel="noopener" aria-label="ReBalance stars on GitHub"><img src="https://img.shields.io/github/stars/yu-lin-li/ReBalance?style=social" alt="GitHub stars" height="20"></a></div>
       </div>
     </div>
 
