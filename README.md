@@ -1,8 +1,9 @@
 # xiaomoguhz.github.io
 
 Personal academic homepage of Junjie Wang (王俊杰), hosted on GitHub Pages.
-Pure static site (no build step), in the Size Wu / AcademicPages (Minimal Mistakes)
-style: a sticky author sidebar on the left and content on the right, with a
+Pure static site (no build step), visually inspired by the light version of
+[Minimal Light](https://github.com/yaoyao-liu/minimal-light): a compact author
+sidebar on the left and content on the right, with a
 reverse-chronological "Recent News" timeline. English only.
 
 Live: https://xiaomoguhz.github.io
@@ -11,23 +12,25 @@ Live: https://xiaomoguhz.github.io
 
 ```
 index.html       # sidebar + About / News / Experience / Publications / Honors
-style.css        # two-column layout, Inter, muted blue links, responsive
+style.css        # light-only two-column layout, Crimson Pro, blue links, responsive
 image/
   avatar.png     # profile photo
 ```
 
 Social icons use Font Awesome 6 (loaded via CDN); no local assets needed.
-Inter is loaded from Google Fonts, with system fonts for Chinese text.
+Crimson Pro is loaded from Google Fonts, with serif fallbacks and system fonts
+for interface labels. The site stays light even when the system prefers dark mode.
 GitHub star badges use Shields.io and update automatically with service caching.
 
 ## Maintenance
 
-- **Avatar**: use `image/avatar.png`. The circular photo displays at 220px on desktop and 160px on mobile. Square, >=400px recommended.
+- **Avatar**: use `image/avatar.png`. The circular photo displays at 170px on desktop and 78px beside the name on phones. Square, >=400px recommended.
 - **Recent News**: keep the latest four `<p>` items directly inside `<div class="news">` and older items inside `<details class="older-news">`, in reverse order; date format `(Mon Year)`.
-- **Publications**: add/remove `<div class="pub">` blocks under each `pubgroup`. Images fit within a 240 x 120px bordered area on desktop, preserving their aspect ratio. Each Code link has a linked Shields.io star badge for the same repository.
+- **Publications**: add/remove `<div class="pub">` blocks under each `pubgroup`. Standard images fit within a 190 x 122px bordered area on desktop, preserving their aspect ratio. Venue labels sit on the thumbnails, and titles link to the paper. Each Code link has a linked Shields.io star badge for the same repository. GDeCLIP leads the visual-perception group with an `IEEE TPAMI` badge and `Accepted` label.
+- **Navigation**: sidebar links point to the About, Experience, Publications, and Honors section anchors.
 - **Experience**: list supervisors using `Supervised by` and link names to confirmed personal homepages when available.
 - **Google Scholar**: the sidebar `Google Scholar` link uses `href="#"` as a placeholder; replace with the real URL.
-- **News dates**: currently filled with the usual decision month of each venue; verify against actual notification dates.
+- **News dates**: the GDeCLIP acceptance month (October 2026) follows the author's update. Older entries were filled with the usual decision month of each venue; verify against actual notification dates.
 
 ## Local preview
 
