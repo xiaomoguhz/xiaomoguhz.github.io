@@ -64,7 +64,6 @@ p { margin: 0 0 16px; }
 .news p { margin: 9px 0; }
 .news .date { white-space: nowrap; color: var(--muted); font-size: 15px; }
 .news-highlight { color: var(--head); }
-.news-label { display: inline-block; margin-right: 6px; padding: 1px 6px; border-radius: 3px; background: var(--tint); color: var(--head); font: 600 11px/1.6 var(--ui-font); }
 .older-news { margin-top: 12px; }
 .older-news summary { width: fit-content; color: var(--link); cursor: pointer; font-size: 16px; }
 .older-news summary:hover { color: var(--link-hover); }
@@ -98,7 +97,7 @@ p { margin: 0 0 16px; }
 .entry .orglogo { height: 24px; width: auto; }
 .entry .date { color: var(--muted); font-size: 15px; white-space: nowrap; }
 .entry .role { margin-top: 5px; font-size: 17px; }
-.supervision { margin: 2px 0 10px; color: var(--muted); font-size: 16px; }
+.supervision { color: var(--muted); font-size: 16px; }
 ul.bul { padding-left: 20px; margin: 8px 0; }
 ul.bul li { margin: 7px 0; }
 .entry .bul { font-size: 17px; }

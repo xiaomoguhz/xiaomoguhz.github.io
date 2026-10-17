@@ -28,7 +28,7 @@ GitHub star badges use Shields.io and update automatically with service caching.
 - **Recent News**: keep the latest four `<p>` items directly inside `<div class="news">` and older items inside `<details class="older-news">`, in reverse order; date format `(Mon Year)`.
 - **Publications**: add/remove `<div class="pub">` blocks under each `pubgroup`. Standard images fit within a 190 x 122px bordered area on desktop, preserving their aspect ratio. Venue labels sit on the thumbnails, and titles link to the paper. Each Code link has a linked Shields.io star badge for the same repository. GDeCLIP leads the visual-perception group with an `IEEE TPAMI` badge and `Accepted` label.
 - **Navigation**: sidebar links point to the About, Experience, Publications, and Honors section anchors.
-- **Experience**: list supervisors using `Supervised by` and link names to confirmed personal homepages when available.
+- **Experience**: place `Research Intern` on the left and `Supervised by` on the right of the same row, without parentheses. Stack them on phones. Link supervisor names to confirmed personal homepages when available.
 - **Google Scholar**: the sidebar `Google Scholar` link uses `href="#"` as a placeholder; replace with the real URL.
 - **News dates**: the GDeCLIP acceptance month (October 2026) follows the author's update. Older entries were filled with the usual decision month of each venue; verify against actual notification dates.
 
