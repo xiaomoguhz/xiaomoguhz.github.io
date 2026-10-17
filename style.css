@@ -75,7 +75,6 @@ p { margin: 0 0 16px; }
 .pub .thumb { position: relative; width: 100%; height: 122px; border: 1px solid var(--rule); border-radius: 5px; background: #fff; }
 .pub .thumb img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: inherit; }
 .pub .venue { position: absolute; top: -8px; left: 8px; padding: 3px 8px; border-radius: 3px; background: var(--head); color: #fff; font: 600 11px/1.4 var(--ui-font); }
-.pub .venue-highlight { background: #126d99; }
 .pub .body { min-width: 0; }
 .pub .ptitle { color: #111; font-size: 19px; font-weight: 600; line-height: 1.3; }
 .pub .ptitle a { color: inherit; }

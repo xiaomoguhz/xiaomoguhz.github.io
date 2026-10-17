@@ -20,7 +20,8 @@ image/
 Social icons use Font Awesome 6 (loaded via CDN); no local assets needed.
 Crimson Pro is loaded from Google Fonts, with serif fallbacks and system fonts
 for interface labels. The site stays light even when the system prefers dark mode.
-GitHub star badges use Shields.io and update automatically with service caching.
+GitHub star badges use Shields.io dynamic JSON badges to read `stargazers_count`
+from the GitHub repository API, with `cacheSeconds=3600`. Counts update automatically.
 
 ## Maintenance
 
